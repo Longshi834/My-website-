@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect & Stream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Connect & Stream</h1>
+        <nav>
+            <a href="#feed">Home</a>
+            <a href="#live">Live Streams</a>
+            <a href="#friends">Friends</a>
+            <a href="#profile">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Video Feed Section -->
+    <section id="feed">
+        <h2>Video Feed</h2>
+        <div class="video-container">
+            <div class="video-item">
+                <video src="path/to/video.mp4" controls></video>
+                <p>Video Title 1</p>
+            </div>
+            <div class="video-item">
+                <video src="path/to/video.mp4" controls></video>
+                <p>Video Title 2</p>
+            </div>
+            <!-- More video items -->
+        </div>
+    </section>
+
+    <!-- Live Streams Section -->
+    <section id="live">
+        <h2>Live Streams</h2>
+        <div class="live-container">
+            <div class="live-item">
+                <video src="path/to/live/stream" controls autoplay></video>
+                <p>Live Stream Title</p>
+            </div>
+            <!-- More live stream items -->
+        </div>
+    </section>
+
+    <!-- Friends Section -->
+    <section id="friends">
+        <h2>Friends</h2>
+        <div class="friends-container">
+            <div class="friend-item">
+                <img src="path/to/profile-pic.jpg" alt="Friend Name">
+                <p>Friend Name</p>
+                <button>Add Friend</button>
+            </div>
+            <!-- More friend items -->
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <div class="profile-info">
+            <img src="path/to/your-pic.jpg" alt="Your Name">
+            <p>Your Name</p>
+            <p>Your Bio</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Connect & Stream</p>
+    </footer>
+</body>
+</html>
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+section {
+    margin: 2em;
+    padding: 1em;
+    background: #fff;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.video-container, .live-container, .friends-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-item, .live-item, .friend-item {
+    flex: 1 1 200px;
+    margin: 1em;
+    text-align: center;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
